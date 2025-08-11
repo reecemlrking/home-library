@@ -26,3 +26,8 @@
 
 - As a user, I want to back up my library data, so I don’t lose my collection if I change or lose my device.
 - As a user, I want to sync my library across multiple devices, so I can access my collection
+
+## Personal Reviews
+
+- As a user, I want the option to rate books I've read for my own reference.
+- As a user, I want to write reviews for books I've read for my own reference.
