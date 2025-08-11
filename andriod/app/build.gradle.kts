@@ -38,6 +38,9 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     testImplementation(libs.junit)
-    androidTestImplementation(libs.ext.junit)
-    androidTestImplementation(libs.espresso.core)
+    testImplementation(libs.ext.junit)
+    testImplementation(libs.espresso.core)
+
+    implementation(libs.play.services.code.scanner)
+
 }
