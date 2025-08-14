@@ -79,8 +79,14 @@ public class GoogleBooksApiRequestRunnable implements Runnable{
         } catch (JSONException e) {
             throw new RuntimeException(e);
         }
+        JSONObject responseJson = null;
+        try {
+            responseJson = new JSONObject(responseString);
+        } catch (JSONException e) {
+            throw new RuntimeException(e);
+        }
         connection.disconnect();
-
+        Log.w("API REQUEST", responseJson.toString());
     }
 
     private void onPreExecute() {
