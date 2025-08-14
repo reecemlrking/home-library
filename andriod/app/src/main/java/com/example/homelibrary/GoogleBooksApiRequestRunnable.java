@@ -16,7 +16,7 @@ import java.net.URL;
 public class GoogleBooksApiRequestRunnable implements Runnable{
     private String query;
     private String key;
-    private final String apiKey = "AIzaSyDEZ3gzCi8aoPv2OVsYajBXXOs-Id_14I4";
+    private final String apiKey = System.getProperty("GOOGLE_BOOKS_API_KEY");
     private String uri;
 
     @Override
@@ -80,6 +80,7 @@ public class GoogleBooksApiRequestRunnable implements Runnable{
             throw new RuntimeException(e);
         }
         connection.disconnect();
+
     }
 
     private void onPreExecute() {
